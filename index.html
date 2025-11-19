@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,46 +17,56 @@
         .container {
             background: white;
             width: 90%;
-            max-width: 500px;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+            max-width: 550px;
+            padding: 35px;
+            border-radius: 22px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
         .logo {
-            width: 120px;
-            height: 120px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
             object-fit: cover;
             border: 3px solid #1b8f3a;
         }
 
         h1 {
             color: #1b8f3a;
-            font-size: 24px;
-            margin-bottom: 25px;
+            font-size: 26px;
+            margin-bottom: 30px;
+            font-weight: 800;
             text-transform: uppercase;
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+            100% { transform: translateY(0); }
         }
 
         a {
             display: block;
             background: #1b8f3a;
             color: white;
-            padding: 15px;
-            margin: 12px 0;
+            padding: 22px;
+            margin: 15px 0;
             text-decoration: none;
-            font-size: 20px;
-            border-radius: 12px;
-            transition: 0.3s;
-            font-weight: 600;
+            font-size: 24px;
+            border-radius: 14px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            animation: float 3s ease-in-out infinite;
         }
 
+        /* Slight scale on hover */
         a:hover {
             background: #15702d;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -65,7 +74,7 @@
 
     <div class="container">
 
-        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/National_Youth_Service_Corps_%28logo%29.png" alt="NYSC Yobe Logo">
+        <img class="logo" src="bello.png" alt="NYSC Yobe Logo">
 
         <h1>NYSC YOBE STATE - SOCIAL MEDIA LINKS 🔗</h1>
 
